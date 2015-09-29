@@ -1,6 +1,6 @@
-This file provides a summary of the necessary information to calculate a code's Delta factor. The full procedure and background are described in the article by K. Lejaeghere, V. Van Speybroeck, G. Van Oost, and S. Cottenier: "[Error estimates for solid-state density-functional theory predictions: an overview by means of the ground-state elemental crystals](http://dx.doi.org/10.1080/10408436.2013.77250)", Crit. Rev. Solid State (2014).
+This file provides a summary of the necessary information to calculate a code's Delta factor. The full procedure and background are described in the article by K. Lejaeghere, V. Van Speybroeck, G. Van Oost, and S. Cottenier: "[Error estimates for solid-state density-functional theory predictions: an overview by means of the ground-state elemental crystals](http://dx.doi.org/10.1080/10408436.2013.772503)", Crit. Rev. Solid State (2014).
 
-An overview of the current calculated Delta factors can be found at (http://molmod.ugent.be/deltacodesdft).
+An overview of the current calculated Delta factors can be found at http://molmod.ugent.be/deltacodesdft
 
 In addition to this `README.md`, the following files should have been included with the Supplementary Material:
 - `calcDelta.py`
@@ -10,7 +10,7 @@ In addition to this `README.md`, the following files should have been included w
 - `primCIFs`
 - `history.tar.gz`
 
-In order to be able to run calcDelta.py and eosfit.py, python and numpy are needed.
+In order to be able to run `calcDelta.py` and `eosfit.py`, python and numpy are needed.
 
 CONTENTS OF THE SUPPLEMENTARY MATERIAL
 --------------------------------------
