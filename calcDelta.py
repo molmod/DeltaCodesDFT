@@ -133,7 +133,7 @@ python calcDelta.py --help displays the current instructions
     try:
         len(data_f['element'])
     except TypeError:
-        print 'Error: ' + argv[1] + ': at least two elements required'
+        print('Error: ' + argv[1] + ': at least two elements required')
         exit()
 
     eloverlap = list(set(data_f['element']) & set(data_w['element']))
@@ -286,9 +286,9 @@ def show_results(outfile, infile, reffile, Delta, Deltarel, Delta1, eloverlap,
     for el in elementlist:
         while True:
             try:
-                i = eloverlap.index(el)
-                outfile.write(eloverlap[i] + '\t %.3f\t %.1f\t%.3f \n' 
-                    % (Delta[i], Deltarel[i], Delta1[i]))
+                i = eloverlap.index(el.encode('utf-8'))
+                outfile.write('%s\t %.3f\t %.1f\t%.3f \n' 
+                    % (el, Delta[i], Deltarel[i], Delta1[i]))
                 break
             except ValueError:
                 outfile.write(el + '\t N/A \t N/A \tN/A \n')
